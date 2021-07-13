@@ -1,14 +1,47 @@
-# rock-paper-scissors-shoot
-#create game.py
+# Rock, Paper, Scissors Shoot!
 
-print("Rock,Paper,Scissors,Shoot!")
+A fun game of Rock, Paper, Scissors.
 
-#create environment
+## Prerequisites
 
-conda create -n my-game-env python=3.8 # (first time only)
+  + Anaconda 3.7+
+  + Python 3.7+
+  + Pip
+
+## Installation
+
+Fork this [remote repository](https://github.com/abhisheksn/rock-paper-scissors-game) under your own control, then "clone" or download your remote copy onto your local computer.
+
+Then navigate there from the command line (subsequent commands assume you are running them from the local repository's root directory):
+
+```
+cd ~/Desktop/rock-paper-scissors-game
+```
+
+## Create Environment
+Use Anaconda to create and activate a new virtual environment, perhaps called "my-first-env":
+```
+conda create -n my-game-env python=3.8 #(first time only)
+```
+```
 conda activate my-game-env
+```
+## Install Packages
+```
+pip install -r requirements.txt
+```
+## Setup
 
-#run python script
+In the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username:
+
+    PLAYER_NAME="Jon Snow"
+
+## Run Python Script
+```
 python game.py
+```
+## Provide User Input
 
-####If you see the "Rock, Paper, Scissors, Shoot!" message, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
+Choose rock, paper or scissors.
+
+The game should run as intended. Enjoy!
