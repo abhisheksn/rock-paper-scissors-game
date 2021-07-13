@@ -1,4 +1,5 @@
 # game.py
+import random
 
 print("Rock, Paper, Scissors, Shoot!")
 
@@ -15,7 +16,13 @@ else:
     exit()
 
 #Generate a Computer Choice
+#source: https://www.w3schools.com/python/ref_random_choice.asp
 
+valid_options = ["rock", "paper", "scissors"]
+
+computer_choice = random.choice(valid_options)
+
+print("Computer chose:", computer_choice)
 
 #Determine the winner
 
