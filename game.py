@@ -11,8 +11,9 @@ load_dotenv()  #invokes / uses the function we got from the third-party package.
 user_name = os.getenv("PLAYER_NAME", default="Player One")
 
 #Ask for a User Input
-#source:
+
 user_input = input("Please choose either 'rock', 'paper', or 'scissors': ")
+user_input = user_input.lower() #From Alex's question in class
 
 #Validate the User Input
 if (user_input == "rock") or (user_input == "paper") or (user_input == "scissors"):
