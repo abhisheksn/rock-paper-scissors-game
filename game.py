@@ -39,7 +39,7 @@ elif user_input == "paper" and computer_choice == "rock":
 elif user_input == "scissors" and computer_choice == "paper":
   result_display = "Scissors cuts paper. Congrats! You won."
 else:
-  result_display = "Oh no! The computer won. Try again?"
+  result_display = "Oh, the computer won. It's ok. Try again?"
 
 #Display final results
 
