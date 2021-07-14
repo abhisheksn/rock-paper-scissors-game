@@ -19,7 +19,7 @@ cd ~/Desktop/rock-paper-scissors-game
 ```
 
 ## Create Environment
-Use Anaconda to create and activate a new virtual environment, perhaps called "my-first-env":
+Use Anaconda to create and activate a new virtual environment, perhaps called "my-game-env":
 ```
 conda create -n my-game-env python=3.8 #(first time only)
 ```
@@ -37,10 +37,15 @@ In the root directory of your local repository, create a new file called ".env",
 
     PLAYER_NAME="Jon Snow"
 
+> NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the [".gitignore"](/.gitignore) file). This means each person who uses our code needs to create their own local ".env" file.
+
 ## Run Python Script
 ```
 python game.py
 ```
+
+> NOTE: if you see an error like "ModuleNotFoundError: No module named '...'", it's because the given package isn't installed, so run the `pip` command above to ensure that package has been installed into the virtual environment.
+
 ## Provide User Input
 
 Choose rock, paper or scissors.
