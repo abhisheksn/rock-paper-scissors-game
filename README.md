@@ -27,6 +27,7 @@ conda create -n my-game-env python=3.8 #(first time only)
 conda activate my-game-env
 ```
 ## Install Packages
+After activating the virtual environment, install package dependencies (see the ["requirements.txt"](/requirements.txt) file):
 ```
 pip install -r requirements.txt
 ```
